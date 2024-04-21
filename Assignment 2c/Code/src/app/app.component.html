@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="FormDiv">
+
+    <h1>Simple Form</h1>
+    <form #simpleForm="ngForm" (ngSubmit)="getValues(simpleForm.value)">
+      <input type="text" ngModel name="user" placeholder="Enter Name">
+      <br> <br>
+      <input type="text" ngModel name="age" placeholder="Enter age">
+      <br> <br>
+      <input type="text" ngModel name="city" placeholder="Enter city">
+      <br> <br>
+      <button>Get user value</button>
+    </form>
+    
+  </div>
+</body>
+
+</html>
